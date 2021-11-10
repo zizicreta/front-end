@@ -4,13 +4,15 @@
     <h1>Welcome to Home</h1>
          <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
     <h2>TEST</h2>
-
+    <MyAlert></MyAlert>
 
     <div class="text-center">
     <v-bottom-sheet
       v-model="sheet"
       inset
     >
+    
+
       <template v-slot:activator="{ on, attrs }">
         <v-btn
           color="orange"
@@ -46,9 +48,14 @@
 </template>
 
 <script>
+  import MyAlert from '../components/alert1.vue'
   export default {
+    
     data: () => ({
       sheet: false,
     }),
+    components: {
+      MyAlert,
+    }
   }
 </script>

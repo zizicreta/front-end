@@ -39,8 +39,9 @@
     </v-app-bar>
 
     <v-main>
+      <MyHeader></MyHeader>
       <!-- <HelloWorld/> -->
-      <div id="" class="">
+      <div>
       <router-view></router-view>
       <MyFooter></MyFooter>
       </div>
@@ -52,13 +53,15 @@
 <script>
 // import HelloWorld from './components/HelloWorld';
  import MyFooter from './layout/footer-beautify-4.vue'
+ import MyHeader from './layout/header-beautify.vue'
 
 export default {
   name: 'App',
 
   components: {
     // HelloWorld,
-    MyFooter
+    MyFooter,
+    MyHeader
   },
 
   data: () => ({
